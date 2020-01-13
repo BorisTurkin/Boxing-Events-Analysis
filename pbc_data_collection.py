@@ -78,7 +78,7 @@ df = df.replace({'dob_2': {'2018-08-03': '1989-11-18'}}, regex=True)
 for i in ['date', 'dob_1', 'dob_2']:
     df[i] = pd.to_datetime(df[i]).dt.date
 df = df.sort_values(by='date', ascending=False).reset_index(drop=True)
-# Add various parameters
+# Add various potentially useful parameters
 df['age_1'] = [relativedelta(a, b).years for a, b in zip(df.date, df.dob_1)]
 df['age_2'] = [relativedelta(a, b).years for a, b in zip(df.date, df.dob_2)]
 df['age_delta'] = [relativedelta(a, b).years for a, b in zip(df.dob_1, df.dob_2)]
