@@ -14,7 +14,7 @@ master_page = pbc_fights_link + '/past-boxing-fights'
 
 # Find all links with fights and check if they are indeed active
 pbc_links = []
-for i in range(1, 21):
+for i in range(1, 100):
     new_link = master_page + '?page=' + str(i)
     response = requests.get(new_link)
     if response.status_code == 200:
