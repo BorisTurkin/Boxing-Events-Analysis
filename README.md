@@ -1,2 +1,6 @@
 # Boxing-Events-Analysis
-Analysis of the 
+
+Quick analysis fight events in the major boxing streaming networks.
+
+
+Firtst network analysed: Premier Boxing Champtions (PBC)
