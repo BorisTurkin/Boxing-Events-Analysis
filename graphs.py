@@ -42,7 +42,7 @@ plt.xlabel('frequency')
 plt.show()
 
 
-# Plot of nationalities
+# Plot of work locations
 sns.countplot(
     y='work_location',
     data=df_names,
